@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi To-Do List Semantik</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Daftar Kegiatan Harian 🗓️</h1>
+    </header>
+
+    <main class="container">
+        
+        <form id="todo-form">
+            <fieldset class="input-group">
+                <input type="text" id="todo-input" placeholder="Masukkan kegiatan baru..." required>
+                <input type="date" id="date-input" required>
+                <button type="submit" id="add-button">Tambah</button>
+            </fieldset>
+            <p id="error-message" class="error-message"></p>
+        </form>
+
+        <hr>
+        
+        <section class="list-section">
+            
+            <section class="filter-section">
+                <label for="filter-select">Filter:</label>
+                <select id="filter-select">
+                    <option value="all">Semua</option>
+                    <option value="pending">Belum Selesai</option>
+                    <option value="completed">Selesai</option>
+                </select>
+            </section>
+
+            <ul id="todo-list">
+                </ul>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2024 To-Do List App. Dibuat dengan HTML Semantik, CSS, & JS.</p>
+    </footer>
+
+    <script src="css/script.js"></script>
+</body>
+</html>

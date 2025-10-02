@@ -1,0 +1,167 @@
+/* Import font dari Google Fonts (opsional) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column; /* Ubah ke column agar header dan footer mudah ditata */
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    margin: 0;
+}
+
+/* Style tambahan untuk elemen semantik baru */
+.app-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Menggunakan MAIN sebagai wadah utama, bertindak sebagai container */
+.container { 
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Form Styling - Menggunakan fieldset sebagai pengganti div.input-group */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    border: none; /* Hapus border default fieldset */
+    padding: 0; /* Hapus padding default fieldset */
+    margin: 0 0 15px 0; 
+}
+
+#todo-input, #date-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex-grow: 1; 
+}
+
+#date-input {
+    flex-grow: 0;
+    width: 130px; 
+}
+
+#add-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-button:hover {
+    background-color: #0056b3;
+}
+
+/* Error Message */
+.error-message {
+    color: #dc3545;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    height: 20px; 
+    font-size: 0.9em;
+}
+
+/* To-Do List Styling */
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 5px solid #007bff;
+    transition: background 0.3s;
+}
+
+.todo-item:hover {
+    background: #e9ecef;
+}
+
+.todo-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.todo-text {
+    font-weight: 600;
+}
+
+.todo-date {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+/* Completed State */
+.completed .todo-text {
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+
+.completed {
+    border-left-color: #28a745;
+    background: #e9f7ee;
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Filter Section - Menggunakan section sebagai pengganti div.filter-section */
+.filter-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+#filter-select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.app-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #6c757d;
+}
