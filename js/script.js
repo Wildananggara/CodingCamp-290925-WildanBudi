@@ -12,11 +12,11 @@ let todos = [];
 // Fungsi untuk Validasi Input Form
 function validateInput(text, date) {
     if (text.trim() === "") {
-        errorMessage.textContent = "Kolom kegiatan tidak boleh kosong!";
+        errorMessage.textContent = "Kolom kegiatan harus diisi!";
         return false;
     }
     if (date.trim() === "") {
-        errorMessage.textContent = "Tanggal harus diisi!";
+        errorMessage.textContent = "Harap pilih tanggal!";
         return false;
     }
     // Cek apakah tanggal yang dimasukkan adalah tanggal di masa lalu
@@ -27,7 +27,7 @@ function validateInput(text, date) {
 
     // Perbandingan dilakukan hanya jika tanggal dipilih. Jika tanggal hari ini, dianggap valid.
     if (selectedDate < today) {
-        errorMessage.textContent = "Tanggal tidak boleh di masa lalu!";
+        errorMessage.textContent = "Tanggal tidak valid";
         return false;
     }
 
