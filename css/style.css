@@ -93,7 +93,7 @@ h1 {
     margin-bottom: 8px;
     background: #f8f9fa;
     border-radius: 6px;
-    border-left: 5px solid #007bff;
+    border-left: 5px solid red;
     transition: background 0.3s;
 }
 
@@ -114,18 +114,18 @@ h1 {
 
 .todo-date {
     font-size: 0.8em;
-    color: #6c757d;
+    color: #000000;
 }
 
 /* Completed State */
 .completed .todo-text {
     text-decoration: line-through;
-    color: #a0a0a0;
+    color: #000000;
 }
 
 .completed {
     border-left-color: #28a745;
-    background: #e9f7ee;
+    background: #2fd017da;
 }
 
 /* Delete Button */
@@ -155,7 +155,7 @@ h1 {
 #filter-select {
     padding: 8px;
     border-radius: 6px;
-    border: 1px solid #ddd;
+    border: 1px solid #007bff;
 }
 
 .app-footer {
